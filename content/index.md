@@ -1,11 +1,8 @@
 ---
-title: Welcome
+title: L O G B O O K
 custom-width: 100
 ---
-
 ![[Gemini_Generated_Image_iu9k99iu9k99iu9k.jpeg]]
-
-*Welcome!*
 
 I'm Andrew. This is my little digital world on the internet—a place where I grow my thoughts, however transient or matured. I'm an MD/PhD student at Boston University, and my days are defined by precision.
 

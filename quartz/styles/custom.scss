@@ -1,5 +1,68 @@
-@use "./variables.scss" as *;
+/* Force JetBrains Mono on all UI elements */
+.left, .right, .search, footer {
+  font-family: "JetBrains Mono", monospace !important;
+}
 
-// put your custom CSS here!
-/* Category header styling */
+/* Force site title to match the terminal aesthetic */
+.page-title a {
+  font-family: "JetBrains Mono", monospace !important;
+  font-weight: 700;
+  text-transform: lowercase;
+}
 
+/* Enforce Newsreader on the main reading canvas */
+.center, article {
+  font-family: "Newsreader", serif !important;
+}
+
+/* Custom Module Styling for the Homepage */
+.banner {
+  width: 100%;
+  aspect-ratio: 21/9;
+  background: linear-gradient(135deg, #27272a 0%, #18181b 100%);
+  border: 1px solid var(--lightgray);
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.intro {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+  color: var(--darkgray);
+}
+
+.module {
+  margin-bottom: 2.5rem;
+  border-left: 2px solid transparent;
+  padding-left: 1rem;
+  transition: border-color 0.2s;
+}
+
+.module:hover {
+  border-left: 2px solid var(--secondary);
+}
+
+.module-title {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.module-title span a {
+  color: var(--dark) !important;
+  font-weight: bold;
+  margin-left: 0.8rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
