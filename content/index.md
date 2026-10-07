@@ -1,5 +1,6 @@
 ---
 title: Welcome
+custom-width: 100
 ---
 
 ![[Gemini_Generated_Image_iu9k99iu9k99iu9k.jpeg]]
@@ -17,7 +18,7 @@ Consider this an open working bench.
 As far as 'about' pages go, I hope this acts as an open invitation into the winding paths throughout this garden:
 
 * [[log/october-reflections|The Log]]: Daily thoughts, Quarto visualization snippets, and lab rotation summaries.
-* [[elevations/white-mountains-kit|Elevations]]: Movement, endurance tracking, and gear packing lists.
+* [[monadnock|Elevations]]: Movement, endurance tracking, and gear packing lists.
 * [[sandbox/fx3-cinematography|Sandbox]]: FX3 shot lists, framing notes, and personal video project cuts.
 
 *andrew*
