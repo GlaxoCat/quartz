@@ -1,11 +1,11 @@
 /* Force JetBrains Mono on all UI elements */
 .left, .right, .search, footer {
-  font-family: "JetBrains Mono", monospace !important;
+  font-family: "JetBrains Mono", serif !important;
 }
 
 /* Force site title to match the terminal aesthetic */
 .page-title a {
-  font-family: "JetBrains Mono", monospace !important;
+  font-family: "Newsreader", serif !important;
   font-weight: 700;
   text-transform: lowercase;
 }
@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: center;
   color: var(--gray);
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Newsreader", serif !important;
   font-size: 0.85rem;
   border-radius: 4px;
   text-align: center;
@@ -53,7 +53,7 @@
 }
 
 .module-title {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Newsreader", monospace;
   color: var(--secondary);
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
