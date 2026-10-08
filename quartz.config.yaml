@@ -31,15 +31,15 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#0b121e"
-        lightgray: "#1e293b"
-        gray: "#64748b"
-        darkgray: "#cbd5e1"
-        dark: "#f1f5f9"
-        secondary: "#8ba6d5"
-        tertiary: "#1e293b"
-        highlight: rgba(139, 166, 213, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#161618"
+        lightgray: "#2c2c2e"
+        gray: "#a1a1aa"
+        darkgray: "#fafafa"
+        dark: "#fafafa"
+        secondary: "#38bdf8"   # Glacier Blue
+        tertiary: "#0369a1"    # Deep Azure (hover)
+        highlight: "rgba(56, 189, 248, 0.15)"
+        textHighlight: "#38bdf888"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true

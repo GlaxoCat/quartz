@@ -18,7 +18,7 @@ tags:
 
 ---
 
-### The Anatomy of an Insolated Monadnock
+### The Anatomy of an Isolated Monadnock
 
 Geologically, an isolated residual hill that stands above an eroded plain. Psychologically, the quickest emergency purge valve for cognitive RAM in New England.
 

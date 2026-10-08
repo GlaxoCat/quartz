@@ -1,13 +1,16 @@
-/* Force JetBrains Mono on all UI elements */
+/* ==========================================
+   GLOBAL TYPOGRAPHY & LAYOUT
+   ========================================== */
+/* Force JetBrains Mono on UI elements (Sidebar, Search, Footer) */
 .left, .right, .search, footer {
-  font-family: "JetBrains Mono", serif !important;
+  font-family: "JetBrains Mono", monospace !important;
 }
 
 /* Force site title to match the terminal aesthetic */
 .page-title a {
-  font-family: "Newsreader", serif !important;
+  font-family: "JetBrains Mono", monospace !important;
   font-weight: 700;
-  text-transform: lowercase;
+  color: var(--darkgray) !important;
 }
 
 /* Enforce Newsreader on the main reading canvas */
@@ -15,54 +18,104 @@
   font-family: "Newsreader", serif !important;
 }
 
-/* Custom Module Styling for the Homepage */
+/* ==========================================
+   TERMINAL SIDEBAR (Matches mockup exactly)
+   ========================================== */
+/* Hide the default Quartz folder/file SVG icons */
+.explorer svg { display: none !important; }
+
+/* Add the terminal '>' prompt before folder and file names */
+.explorer .folder-title::before,
+.explorer .folder-outer > ul > li > a::before {
+  content: "> ";
+  color: var(--gray);
+}
+
+/* Uppercase section headers */
+.explorer .title, 
+.recent-notes h3 {
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem !important;
+  color: var(--darkgray) !important;
+}
+
+/* Style recent notes: Orange dates, gray titles */
+.recent-notes ul li {
+  margin-bottom: 1.2rem;
+}
+.recent-notes ul li .meta {
+  color: var(--secondary) !important; /* Technical Orange dates */
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.recent-notes ul li a {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+.recent-notes ul li a:hover { color: var(--darkgray); }
+
+/* ==========================================
+   HOMEPAGE MODULES
+   ========================================== */
+/* Cinematic Banner */
 .banner {
   width: 100%;
   aspect-ratio: 21/9;
-  background: linear-gradient(135deg, #27272a 0%, #18181b 100%);
+  background: transparent;
   border: 1px solid var(--lightgray);
   margin-bottom: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--gray);
-  font-family: "Newsreader", serif !important;
-  font-size: 0.85rem;
+  color: #52525b; /* Very dim gray for the placeholder text */
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
   border-radius: 4px;
   text-align: center;
   padding: 2rem;
   box-sizing: border-box;
 }
 
+/* Spaced, orange main header */
+.center article > h1 {
+  font-family: "JetBrains Mono", monospace !important;
+  color: var(--secondary) !important; /* Technical Orange */
+  letter-spacing: 0.4em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* Editorial Intro */
 .intro {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   line-height: 1.6;
   margin-bottom: 4rem;
   color: var(--darkgray);
 }
 
-.module {
-  margin-bottom: 2.5rem;
-  border-left: 2px solid transparent;
-  padding-left: 1rem;
-  transition: border-color 0.2s;
-}
-
-.module:hover {
-  border-left: 2px solid var(--secondary);
-}
-
+/* Index Modules */
+.module { margin-bottom: 2.5rem; }
 .module-title {
-  font-family: "Newsreader", monospace;
-  color: var(--secondary);
-  font-size: 0.95rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
-
-.module-title span a {
-  color: var(--dark) !important;
+.module-title .bracket { 
+  color: var(--secondary); /* Technical Orange brackets */
+  margin-right: 0.8rem;
+}
+.module-title a {
+  color: var(--darkgray) !important;
   font-weight: bold;
-  margin-left: 0.8rem;
   letter-spacing: 0.05em;
   text-decoration: none;
+}
+.module p {
+  font-family: "Newsreader", serif;
+  color: var(--gray);
+  margin-top: 0;
+  font-size: 1rem;
 }
